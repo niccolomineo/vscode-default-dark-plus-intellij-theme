@@ -1,0 +1,35 @@
+{
+    "name": "default-dark-plus-intellij",
+    "displayName": "Default Dark+ IntelliJ Theme",
+    "description": "A theme extension coupling the IntelliJ syntax colour scheme with improved VSCode's Default Dark+ UI colours.",
+    "version": "1.3.3",
+    "publisher": "niccolomineo",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/niccolomineo/vscode-default-dark-plus-intellij-theme"
+    },
+    "engines": {
+        "vscode": "^1.24.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "icon": "icon.png",
+    "contributes": {
+        "themes": [
+            {
+                "label": "Default Dark+ IntelliJ Theme",
+                "uiTheme": "vs-dark",
+                "path": "./themes/default-dark-plus-intellij-theme.json"
+            }
+        ]
+    },
+    "__metadata": {
+        "id": "876cfebe-31e6-49b1-97ba-22801a7d724d",
+        "publisherDisplayName": "Niccolò Mineo",
+        "publisherId": "44dc1d1e-6c73-4187-a8e2-e3625069c657"
+    },
+    "dependencies": {
+        "vsce": "^1.103.1"
+    }
+}
