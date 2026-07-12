@@ -1,1 +1,11 @@
+.git/
+.github/
+.vscode/
 node_modules/
+package-lock.json
+vsc-extension-quickstart.md
+.gitignore
+.vscodeignore
+*.vsix
+icon.svg
+screenshot.svg
