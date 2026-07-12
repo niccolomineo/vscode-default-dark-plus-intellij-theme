@@ -1,0 +1,36 @@
+name: Publish
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - name: Package extension
+        run: npm run package
+      - uses: actions/upload-artifact@v4
+        with:
+          name: vsix
+          path: "*.vsix"
+
+  publish:
+    needs: package
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - name: Publish to Visual Studio Marketplace
+        run: npm run publish
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}

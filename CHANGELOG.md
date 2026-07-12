@@ -1,3 +1,9 @@
+## v1.4.0
+
+- Expand workbench UI coverage (title bar, tabs, lists, inputs, widgets, scrollbars, editor diagnostics, Git decorations, 16 ANSI terminal colors)
+- Manifest hygiene: migrate to `@vscode/vsce` dev dependency, drop committed `__metadata`, bump `engines.vscode`, add `keywords`, `license`, `homepage`, `bugs` and package scripts
+- Add MIT `LICENSE`, expand README, add CI publish workflow
+
 ## v1.3.3
 
 - More bold restoration for #CC7832 tokens
