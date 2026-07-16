@@ -2,7 +2,7 @@
     "name": "default-dark-plus-intellij",
     "displayName": "Default Dark+ IntelliJ Theme",
     "description": "A theme extension coupling the IntelliJ Darcula syntax colour scheme with improved VSCode's Default Dark+ UI colours.",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "publisher": "niccolomineo",
     "license": "MIT",
     "homepage": "https://github.com/niccolomineo/vscode-default-dark-plus-intellij-theme#readme",
@@ -42,6 +42,7 @@
     },
     "scripts": {
         "package": "vsce package",
+        "install-local": "npm run package && code --install-extension \"$(ls -t *.vsix | head -n 1)\" --force",
         "publish": "vsce publish"
     },
     "devDependencies": {

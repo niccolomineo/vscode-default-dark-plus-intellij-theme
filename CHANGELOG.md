@@ -1,3 +1,9 @@
+## v1.5.0
+
+- Adapt to VSCode 1.129 "Modern UI": harmonize sidebar, activity bar, panel and status bar to a single card tone (`#242424`) so floating cards read as one coherent set against the editor canvas
+- Add `activityBar.border` and `panel.border` for clean card edges and rounded corners
+- Add `install-local` package script to build and install the extension locally in one step
+
 ## v1.4.0
 
 - Expand workbench UI coverage (title bar, tabs, lists, inputs, widgets, scrollbars, editor diagnostics, Git decorations, 16 ANSI terminal colors)
