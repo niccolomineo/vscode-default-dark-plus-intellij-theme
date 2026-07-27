@@ -29,6 +29,18 @@ npm run package          # produces default-dark-plus-intellij-<version>.vsix
 code --install-extension default-dark-plus-intellij-<version>.vsix
 ```
 
+## Note for macOS users
+
+The `titleBar.*` and `commandCenter.*` colors only apply when VS Code draws the title bar itself. With the native macOS title bar the window chrome is drawn by the system and no theme can recolor it. To get the themed title bar, set:
+
+```jsonc
+"window.titleBarStyle": "custom",
+"window.customTitleBarVisibility": "auto",
+"window.nativeTabs": false      // native tabs force the native title bar
+```
+
+Changing `window.nativeTabs` requires a full restart of VS Code, not just a window reload.
+
 ## Credits
 
 The syntax colors are based on the **Darcula** color scheme by JetBrains. This extension is an independent project and is not affiliated with or endorsed by JetBrains.

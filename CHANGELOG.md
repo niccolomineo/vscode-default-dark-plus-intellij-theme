@@ -1,3 +1,13 @@
+## v1.5.1
+
+- Align the title bar to the card tone (`#242424`) so it matches the status bar, activity bar, sidebar and panel instead of the editor canvas
+- Add `commandCenter.*` colors so the Command Center pill reads as an elevated element rather than inheriting the title bar background
+- Add `activityBarTop.*` colors, which are the ones VS Code actually uses when `workbench.activityBar.location` is `top` or `bottom` — previously only `activityBar.*` was covered, leaving that layout unthemed
+- Add `activityBar.activeBackground` so the selected composite-bar tab pill no longer depends on the `list.inactiveSelectionBackground` fallback
+- Add `toolbar.hoverBackground` and `toolbar.activeBackground` so toolbar icons share the same hover and active tones as the composite-bar tabs instead of the lighter translucent defaults
+- Add `panelTitle.*` colors so the Terminal / Problems / Output tabs use the theme palette and accent for their hover and active states, instead of the brighter `#E7E7E7` default
+- Document in the README that on macOS the `titleBar.*` and `commandCenter.*` colors only apply with the custom title bar style
+
 ## v1.5.0
 
 - Adapt to VSCode 1.129 "Modern UI": harmonize sidebar, activity bar, panel and status bar to a single card tone (`#242424`) so floating cards read as one coherent set against the editor canvas
