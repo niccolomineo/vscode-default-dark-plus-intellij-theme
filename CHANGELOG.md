@@ -1,3 +1,7 @@
+## v1.5.2
+
+- Align `sideBarTitle.foreground` with `activityBarTop.foreground` so a side bar view icon hovers the same color whether it's the only pinned view (title mode) or one of several (Modern UI's own tab strip mode)
+
 ## v1.5.1
 
 - Align the title bar to the card tone (`#242424`) so it matches the status bar, activity bar, sidebar and panel instead of the editor canvas
