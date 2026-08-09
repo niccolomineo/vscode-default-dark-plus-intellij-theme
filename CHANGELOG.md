@@ -1,3 +1,8 @@
+## v1.5.3
+
+- Clear `activityBarTop.activeBorder` so the selected view icon in a side bar tab strip is marked by the active pill alone, instead of carrying a redundant accent underline on top of it — this also matches what Modern UI already forces on the secondary side bar, where the same underline is hardcoded to transparent
+- Set `sideBarActivityBarTop.border` explicitly to `#FFFFFF1A` so the edge under the tab strip uses the card idiom shared by `sideBar.border`, `panel.border` and `titleBar.border`, rather than inheriting the lighter `sideBarSectionHeader.border`
+
 ## v1.5.2
 
 - Align `sideBarTitle.foreground` with `activityBarTop.foreground` so a side bar view icon hovers the same color whether it's the only pinned view (title mode) or one of several (Modern UI's own tab strip mode)
