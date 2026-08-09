@@ -1,57 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1091" height="1091" viewBox="0 0 1091 1091" font-family="Menlo, 'SF Mono', Monaco, monospace">
+  <title>Default Dark+ IntelliJ Theme — VS Code window showing Darcula syntax colors on the harmonized dark workbench</title>
+
   <!-- square dark canvas (top/bottom margins get cropped away) -->
   <rect x="0" y="0" width="1091" height="1091" fill="#1E1E1E"/>
 
   <g transform="translate(0,204)">
-    <!-- window background -->
+    <!-- window background: editor.background -->
     <rect x="0" y="0" width="1091" height="683" fill="#1E1E1E"/>
 
-    <!-- title bar -->
-    <rect x="0" y="0" width="1091" height="30" fill="#1E1E1E"/>
-    <rect x="0" y="29" width="1091" height="1" fill="#2b2b2b"/>
+    <!-- title bar: titleBar.activeBackground / .border / .activeForeground -->
+    <rect x="0" y="0" width="1091" height="30" fill="#242424"/>
+    <rect x="0" y="29" width="1091" height="1" fill="#FFFFFF" fill-opacity="0.102"/>
     <circle cx="16" cy="15" r="6" fill="#ff5f56"/>
     <circle cx="34" cy="15" r="6" fill="#ffbd2e"/>
     <circle cx="52" cy="15" r="6" fill="#27c93f"/>
     <text x="545" y="19" fill="#CCCCCC" font-size="12" text-anchor="middle">models.py — Default Dark+ IntelliJ Theme</text>
 
-    <!-- activity bar -->
-    <rect x="0" y="30" width="48" height="630" fill="#2d2d2d"/>
-    <rect x="0" y="70" width="2" height="24" fill="#007ACC"/>
+    <!-- activity bar: activityBar.background / .activeBackground / .border -->
+    <rect x="0" y="30" width="48" height="630" fill="#242424"/>
+    <rect x="0" y="64" width="48" height="34" fill="#37373D"/>
+    <rect x="0" y="64" width="2" height="34" fill="#FFFFFF"/>
+    <rect x="47" y="30" width="1" height="630" fill="#FFFFFF" fill-opacity="0.102"/>
     <g>
-      <rect x="16" y="72" width="18" height="18" rx="2" fill="none" stroke="#ffffff" stroke-width="1.5"/>
-      <rect x="16" y="118" width="18" height="14" rx="2" fill="none" stroke="#868686" stroke-width="1.5"/>
-      <circle cx="25" cy="168" r="9" fill="none" stroke="#868686" stroke-width="1.5"/>
-      <rect x="16" y="212" width="18" height="18" rx="2" fill="none" stroke="#868686" stroke-width="1.5"/>
+      <rect x="16" y="72" width="18" height="18" rx="2" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+      <rect x="16" y="118" width="18" height="14" rx="2" fill="none" stroke="#8A8A8A" stroke-width="1.5"/>
+      <circle cx="25" cy="168" r="9" fill="none" stroke="#8A8A8A" stroke-width="1.5"/>
+      <rect x="16" y="212" width="18" height="18" rx="2" fill="none" stroke="#8A8A8A" stroke-width="1.5"/>
     </g>
+    <!-- activityBarBadge.background -->
+    <circle cx="34" cy="130" r="7" fill="#007ACC"/>
+    <text x="34" y="134" fill="#FFFFFF" font-size="9" text-anchor="middle">3</text>
 
-    <!-- sidebar / explorer -->
+    <!-- side bar: sideBar.background / .border, sideBarTitle.foreground -->
     <rect x="48" y="30" width="222" height="630" fill="#242424"/>
-    <text x="66" y="52" fill="#BBBBBB" font-size="11" letter-spacing="0.6">EXPLORER</text>
-    <text x="66" y="78" fill="#BBBBBB" font-size="11.5" font-weight="bold">▾ BLOG</text>
-    <g font-size="12" fill="#bebebe" xml:space="preserve">
-      <text x="82" y="100">▸ migrations</text>
-      <text x="82" y="120">  __init__.py</text>
-      <text x="82" y="140">  admin.py</text>
+    <rect x="269" y="30" width="1" height="630" fill="#FFFFFF" fill-opacity="0.102"/>
+    <text x="66" y="52" fill="#CCCCCC" font-size="11" letter-spacing="0.6">EXPLORER</text>
+    <!-- sideBarSectionHeader.border -->
+    <text x="66" y="78" fill="#CCCCCC" font-size="11.5" font-weight="bold">▾ BLOG</text>
+    <rect x="48" y="86" width="222" height="1" fill="#CCCCCC" fill-opacity="0.2"/>
+    <g font-size="12" fill="#BEBEBE" xml:space="preserve">
+      <text x="82" y="106">▸ migrations</text>
+      <text x="82" y="126">  __init__.py</text>
+      <text x="82" y="146">  admin.py</text>
     </g>
-    <!-- active file row -->
-    <rect x="48" y="147" width="222" height="20" fill="#204182cc"/>
-    <text x="82" y="161" font-size="12" fill="#FFFFFF" xml:space="preserve">  models.py</text>
+    <!-- active file row: list.activeSelectionBackground / .activeSelectionForeground -->
+    <rect x="48" y="153" width="222" height="20" fill="#204182" fill-opacity="0.8"/>
+    <text x="82" y="167" font-size="12" fill="#FFFFFF" xml:space="preserve">  models.py</text>
+    <!-- hovered row: list.hoverBackground -->
+    <rect x="48" y="173" width="222" height="20" fill="#2A2D2E"/>
     <g font-size="12" xml:space="preserve">
-      <text x="82" y="181" fill="#bebebe">  views.py</text>
-      <text x="82" y="201" fill="#d7ba7d">  urls.py</text>
-      <text x="82" y="221" fill="#bebebe">  tests.py</text>
+      <text x="82" y="187" fill="#BEBEBE">  views.py</text>
+      <!-- gitDecoration.modifiedResourceForeground -->
+      <text x="82" y="207" fill="#D7BA7D">  urls.py</text>
+      <!-- gitDecoration.untrackedResourceForeground -->
+      <text x="82" y="227" fill="#81B88B">  tests.py</text>
     </g>
 
-    <!-- editor group header / tabs -->
-    <rect x="270" y="30" width="821" height="34" fill="#252526"/>
-    <rect x="270" y="30" width="140" height="34" fill="#1E1E1E"/>
+    <!-- editor group header: editorGroupHeader.tabsBackground, tab.inactiveBackground -->
+    <rect x="270" y="30" width="821" height="34" fill="#1E1E1E"/>
+    <rect x="410" y="30" width="120" height="34" fill="#252526"/>
     <text x="290" y="51" fill="#FFC66D" font-size="12">● models.py</text>
-    <text x="430" y="51" fill="#9a9a9a" font-size="12">views.py</text>
-    <rect x="270" y="63" width="821" height="1" fill="#2b2b2b"/>
+    <text x="430" y="51" fill="#8A8A8A" font-size="12">views.py</text>
 
     <!-- editor code area -->
     <rect x="270" y="64" width="821" height="396" fill="#1E1E1E"/>
-    <!-- current line highlight -->
+    <!-- editor.lineHighlightBackground -->
     <rect x="270" y="238" width="821" height="18" fill="#282828"/>
 
     <!-- line numbers -->
@@ -69,39 +82,52 @@
       <text x="322" y="268">11</text>
       <text x="322" y="286">12</text>
       <text x="322" y="304">13</text>
+      <text x="322" y="322">14</text>
+      <text x="322" y="340">15</text>
+      <text x="322" y="358">16</text>
+      <text x="322" y="376">17</text>
     </g>
 
     <!-- code, monospace tspans colored per token -->
     <g font-size="12.5" xml:space="preserve">
       <text x="340" y="88"><tspan fill="#808080"># Article model — Darcula syntax preview</tspan></text>
-      <text x="340" y="124"><tspan fill="#CC7832" font-weight="bold">from</tspan><tspan fill="#bebebe"> django.db </tspan><tspan fill="#CC7832" font-weight="bold">import</tspan><tspan fill="#bebebe"> models</tspan></text>
-      <text x="340" y="160"><tspan fill="#CC7832" font-weight="bold">class</tspan><tspan fill="#bebebe"> </tspan><tspan fill="#FFC66D">Article</tspan><tspan fill="#bebebe">(</tspan><tspan fill="#9476a5">models.Model</tspan><tspan fill="#bebebe">):</tspan></text>
-      <text x="370" y="178"><tspan fill="#bebebe">title = models.</tspan><tspan fill="#FFC66D">CharField</tspan><tspan fill="#bebebe">(max_length=</tspan><tspan fill="#6897BB">200</tspan><tspan fill="#bebebe">)</tspan></text>
-      <text x="370" y="196"><tspan fill="#bebebe">views = </tspan><tspan fill="#6897BB">0</tspan></text>
-      <text x="370" y="232"><tspan fill="#CC7832" font-weight="bold">def</tspan><tspan fill="#bebebe"> </tspan><tspan fill="#FFC66D">publish</tspan><tspan fill="#bebebe">(</tspan><tspan fill="#9476a5">self</tspan><tspan fill="#bebebe">, editor):</tspan></text>
-      <text x="400" y="250"><tspan fill="#9476a5">self</tspan><tspan fill="#bebebe">.status = </tspan><tspan fill="#639250">"published"</tspan></text>
-      <text x="400" y="268"><tspan fill="#CC7832" font-weight="bold">return</tspan><tspan fill="#bebebe"> </tspan><tspan fill="#FFC66D">len</tspan><tspan fill="#bebebe">(</tspan><tspan fill="#9476a5">self</tspan><tspan fill="#bebebe">.title)</tspan></text>
-      <text x="340" y="304"><tspan fill="#808080"># keywords · types · self · strings · numbers</tspan></text>
+      <text x="340" y="124"><tspan fill="#CC7832" font-weight="bold">from</tspan><tspan fill="#BEBEBE"> django.db </tspan><tspan fill="#CC7832" font-weight="bold">import</tspan><tspan fill="#BEBEBE"> models</tspan></text>
+      <text x="340" y="160"><tspan fill="#CC7832" font-weight="bold">class</tspan><tspan fill="#BEBEBE"> </tspan><tspan fill="#4EC9B0">Article</tspan><tspan fill="#BEBEBE">(</tspan><tspan fill="#9476A5">models.Model</tspan><tspan fill="#BEBEBE">):</tspan></text>
+      <text x="370" y="178"><tspan fill="#BEBEBE">title = models.</tspan><tspan fill="#4EC9B0">CharField</tspan><tspan fill="#BEBEBE">(max_length=</tspan><tspan fill="#6897BB">200</tspan><tspan fill="#BEBEBE">)</tspan></text>
+      <text x="370" y="196"><tspan fill="#BEBEBE">views = </tspan><tspan fill="#6897BB">0</tspan></text>
+      <text x="370" y="232"><tspan fill="#CC7832" font-weight="bold">def</tspan><tspan fill="#BEBEBE"> </tspan><tspan fill="#FFC66D">publish</tspan><tspan fill="#BEBEBE">(</tspan><tspan fill="#9476A5">self</tspan><tspan fill="#BEBEBE">, editor):</tspan></text>
+      <text x="400" y="250"><tspan fill="#9476A5">self</tspan><tspan fill="#BEBEBE">.status = </tspan><tspan fill="#639250">"published"</tspan></text>
+      <text x="400" y="268"><tspan fill="#CC7832" font-weight="bold">return</tspan><tspan fill="#BEBEBE"> </tspan><tspan fill="#FFC66D">len</tspan><tspan fill="#BEBEBE">(</tspan><tspan fill="#9476A5">self</tspan><tspan fill="#BEBEBE">.title)</tspan></text>
+      <text x="370" y="304"><tspan fill="#FFC66D">@classmethod</tspan></text>
+      <text x="370" y="322"><tspan fill="#CC7832" font-weight="bold">def</tspan><tspan fill="#BEBEBE"> </tspan><tspan fill="#FFC66D">latest</tspan><tspan fill="#BEBEBE">(</tspan><tspan fill="#9476A5">cls</tspan><tspan fill="#BEBEBE">, limit):</tspan></text>
+      <text x="400" y="340"><tspan fill="#CC7832" font-weight="bold">return</tspan><tspan fill="#BEBEBE"> </tspan><tspan fill="#9476A5">cls</tspan><tspan fill="#BEBEBE">.objects.</tspan><tspan fill="#FFC66D">all</tspan><tspan fill="#BEBEBE">()[:limit]</tspan></text>
+      <text x="340" y="376"><tspan fill="#808080"># keywords · types · functions · self · cls · strings · numbers</tspan></text>
     </g>
 
-    <!-- terminal panel -->
-    <rect x="270" y="460" width="821" height="200" fill="#1E1E1E"/>
-    <rect x="270" y="460" width="821" height="1" fill="#2b2b2b"/>
-    <text x="290" y="480" fill="#BBBBBB" font-size="10.5" letter-spacing="0.6">TERMINAL</text>
+    <!-- panel: panel.border, panel.background (tab bar), terminal.background (body) -->
+    <rect x="270" y="460" width="821" height="1" fill="#FFFFFF" fill-opacity="0.102"/>
+    <rect x="270" y="461" width="821" height="29" fill="#242424"/>
+    <rect x="270" y="490" width="821" height="170" fill="#1E1E1E"/>
+    <!-- panelTitle.activeForeground + panelTitle.activeBorder -->
+    <text x="290" y="481" fill="#CCCCCC" font-size="10.5" letter-spacing="0.6">TERMINAL</text>
+    <rect x="290" y="486" width="62" height="1" fill="#007ACC"/>
+    <!-- panelTitle.inactiveForeground -->
+    <text x="378" y="481" fill="#8A8A8A" font-size="10.5" letter-spacing="0.6">PROBLEMS</text>
+    <text x="480" y="481" fill="#8A8A8A" font-size="10.5" letter-spacing="0.6">OUTPUT</text>
     <g font-size="12" xml:space="preserve">
-      <text x="290" y="506"><tspan fill="#81b88b">niccolo@mac</tspan><tspan fill="#bebebe">:</tspan><tspan fill="#6897BB">~/blog</tspan><tspan fill="#bebebe">$ git status</tspan></text>
-      <text x="290" y="526"><tspan fill="#bebebe">On branch </tspan><tspan fill="#81b88b">main</tspan></text>
-      <text x="290" y="546"><tspan fill="#bebebe">Changes not staged for commit:</tspan></text>
-      <text x="290" y="566"><tspan fill="#f44747">  modified:   models.py</tspan></text>
-      <text x="290" y="586"><tspan fill="#81b88b">niccolo@mac</tspan><tspan fill="#bebebe">:</tspan><tspan fill="#6897BB">~/blog</tspan><tspan fill="#bebebe">$ python manage.py test</tspan></text>
-      <text x="290" y="606"><tspan fill="#FFC66D">Ran 12 tests</tspan><tspan fill="#bebebe"> in 0.42s </tspan><tspan fill="#81b88b">OK</tspan></text>
-      <text x="290" y="626"><tspan fill="#81b88b">niccolo@mac</tspan><tspan fill="#bebebe">:</tspan><tspan fill="#6897BB">~/blog</tspan><tspan fill="#bebebe">$ </tspan><tspan fill="#bebebe">▏</tspan></text>
+      <text x="290" y="514"><tspan fill="#81B88B">niccolo@mac</tspan><tspan fill="#BEBEBE">:</tspan><tspan fill="#6897BB">~/blog</tspan><tspan fill="#BEBEBE">$ git status</tspan></text>
+      <text x="290" y="534"><tspan fill="#BEBEBE">On branch </tspan><tspan fill="#81B88B">main</tspan></text>
+      <text x="290" y="554"><tspan fill="#BEBEBE">Changes not staged for commit:</tspan></text>
+      <text x="290" y="574"><tspan fill="#CC3232">  modified:   models.py</tspan></text>
+      <text x="290" y="594"><tspan fill="#81B88B">niccolo@mac</tspan><tspan fill="#BEBEBE">:</tspan><tspan fill="#6897BB">~/blog</tspan><tspan fill="#BEBEBE">$ python manage.py test</tspan></text>
+      <text x="290" y="614"><tspan fill="#FFC66D">Ran 12 tests</tspan><tspan fill="#BEBEBE"> in 0.42s </tspan><tspan fill="#81B88B">OK</tspan></text>
+      <text x="290" y="634"><tspan fill="#81B88B">niccolo@mac</tspan><tspan fill="#BEBEBE">:</tspan><tspan fill="#6897BB">~/blog</tspan><tspan fill="#BEBEBE">$ </tspan><tspan fill="#BEBEBE">▏</tspan></text>
     </g>
 
-    <!-- status bar -->
-    <rect x="0" y="660" width="1091" height="23" fill="#2d2d2d"/>
-    <text x="14" y="675" fill="#ffffff" font-size="11">⎇ main*</text>
-    <text x="92" y="675" fill="#ffffff" font-size="11">✔ 0  ✖ 0</text>
-    <text x="1077" y="675" fill="#ffffff" font-size="11" text-anchor="end">Python · UTF-8 · LF</text>
+    <!-- status bar: statusBar.background / .foreground -->
+    <rect x="0" y="660" width="1091" height="23" fill="#242424"/>
+    <text x="14" y="675" fill="#FFFFFF" font-size="11">⎇ main*</text>
+    <text x="92" y="675" fill="#FFFFFF" font-size="11">✔ 0  ✖ 0</text>
+    <text x="1077" y="675" fill="#FFFFFF" font-size="11" text-anchor="end">Python · UTF-8 · LF</text>
   </g>
 </svg>

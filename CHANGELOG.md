@@ -1,3 +1,9 @@
+## v1.5.4
+
+- Color Python's `cls` with the same purple as `self` — both the usage and the parameter scope were missing, so a classmethod's first argument fell back to the default foreground
+- Refresh the screenshot, which still showed the pre-v1.5.0 chrome: the card tone is now `#242424` throughout with `#FFFFFF1A` edges, types use the correct `#4EC9B0`, and the activity bar's selected item shows the theme's own pill instead of an invented accent bar
+- Drop the macOS title bar note from the README
+
 ## v1.5.3
 
 - Clear `activityBarTop.activeBorder` so the selected view icon in a side bar tab strip is marked by the active pill alone, instead of carrying a redundant accent underline on top of it — this also matches what Modern UI already forces on the secondary side bar, where the same underline is hardcoded to transparent

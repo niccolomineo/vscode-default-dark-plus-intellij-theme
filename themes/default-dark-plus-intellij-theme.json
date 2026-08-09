@@ -386,6 +386,8 @@
                 "meta.object-literal.key",
                 "variable.language.special.self.python",
                 "variable.parameter.function.language.special.self.python",
+                "variable.language.special.cls.python",
+                "variable.parameter.function.language.special.cls.python",
                 "meta.structure.dictionary.key.python",
                 "support.function.git-rebase",
                 "entity.other.inherited-class"
