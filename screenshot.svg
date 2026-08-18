@@ -59,7 +59,10 @@
     <!-- editor group header: editorGroupHeader.tabsBackground, tab.inactiveBackground -->
     <rect x="270" y="30" width="821" height="34" fill="#1E1E1E"/>
     <rect x="410" y="30" width="120" height="34" fill="#252526"/>
-    <text x="290" y="51" fill="#FFC66D" font-size="12">● models.py</text>
+    <!-- tab.border -->
+    <rect x="410" y="30" width="1" height="34" fill="#FFFFFF" fill-opacity="0.102"/>
+    <rect x="530" y="30" width="1" height="34" fill="#FFFFFF" fill-opacity="0.102"/>
+    <text x="290" y="51" fill="#FFFFFF" font-size="12">● models.py</text>
     <text x="430" y="51" fill="#8A8A8A" font-size="12">views.py</text>
 
     <!-- editor code area -->
@@ -124,8 +127,9 @@
       <text x="290" y="634"><tspan fill="#81B88B">niccolo@mac</tspan><tspan fill="#BEBEBE">:</tspan><tspan fill="#6897BB">~/blog</tspan><tspan fill="#BEBEBE">$ </tspan><tspan fill="#BEBEBE">▏</tspan></text>
     </g>
 
-    <!-- status bar: statusBar.background / .foreground -->
+    <!-- status bar: statusBar.background / .border / .foreground -->
     <rect x="0" y="660" width="1091" height="23" fill="#242424"/>
+    <rect x="0" y="660" width="1091" height="1" fill="#FFFFFF" fill-opacity="0.102"/>
     <text x="14" y="675" fill="#FFFFFF" font-size="11">⎇ main*</text>
     <text x="92" y="675" fill="#FFFFFF" font-size="11">✔ 0  ✖ 0</text>
     <text x="1077" y="675" fill="#FFFFFF" font-size="11" text-anchor="end">Python · UTF-8 · LF</text>

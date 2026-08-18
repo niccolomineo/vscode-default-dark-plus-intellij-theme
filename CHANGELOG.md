@@ -1,3 +1,13 @@
+## v1.5.5
+
+- Add `surface.background`, `surface.border` and `surface.foreground`, the tokens VSCode 1.133 uses to paint the framed "card" containers — they override `sideBar.border` with `!important`, so the card edge that the whole v1.5.x chrome is built around was being drawn by their defaults rather than by the theme
+- Add `sideBar.foreground`, which was unset despite being the default source for both `surface.foreground` and `sideBarSectionHeader.foreground`
+- Migrate `editorIndentGuide.background` and `editorIndentGuide.activeBackground` to the `background1` / `activeBackground1` keys that replaced them, clearing two deprecation warnings
+- Give editor tabs an explicit text ramp — `tab.activeForeground`, `tab.hoverForeground`, `tab.inactiveForeground`, `tab.unfocusedActiveForeground` and `tab.unfocusedInactiveForeground` now step through the theme's own tones instead of inheriting translucent-white derivations, and `tab.border` uses the card edge so tab separators are visible at all
+- Cover the `statusBarItem.*` interaction states — hover, active and compact-hover now use the same raise the toolbar already uses, and `prominentBackground` replaces a default of black at 50% opacity that read as a near-black blob on the theme's dark status bar rather than as emphasis
+- Add `statusBar.border` so the status bar has the same card edge as the title bar, side bar, panel and activity bar, and point `statusBar.focusBorder` / `statusBarItem.focusBorder` at the accent instead of plain white
+- Tint the debugging status bar with the Darcula keyword orange (`#CC7832`) and dark text, replacing the slightly duller stock `#CC6633`
+
 ## v1.5.4
 
 - Color Python's `cls` with the same purple as `self` — both the usage and the parameter scope were missing, so a classmethod's first argument fell back to the default foreground
