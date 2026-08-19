@@ -1,7 +1,8 @@
 # Default Dark+ IntelliJ Theme (Visual Studio Code)
 
-[![Version](https://img.shields.io/visual-studio-marketplace/v/niccolomineo.default-dark-plus-intellij)](https://marketplace.visualstudio.com/items?itemName=niccolomineo.default-dark-plus-intellij)
-[![Installs](https://img.shields.io/visual-studio-marketplace/i/niccolomineo.default-dark-plus-intellij)](https://marketplace.visualstudio.com/items?itemName=niccolomineo.default-dark-plus-intellij)
+[![Version](https://vsmarketplacebadges.dev/version-short/niccolomineo.default-dark-plus-intellij.svg?style=flat&label=Version&color=blue)](https://marketplace.visualstudio.com/items?itemName=niccolomineo.default-dark-plus-intellij)
+[![Installs](https://vsmarketplacebadges.dev/installs-short/niccolomineo.default-dark-plus-intellij.svg?style=flat&label=Installs&color=blue)](https://marketplace.visualstudio.com/items?itemName=niccolomineo.default-dark-plus-intellij)
+[![Rating](https://vsmarketplacebadges.dev/rating-short/niccolomineo.default-dark-plus-intellij.svg?style=flat&label=Rating&color=blue)](https://marketplace.visualstudio.com/items?itemName=niccolomineo.default-dark-plus-intellij)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 A theme extension coupling the **Darcula** syntax color scheme (JetBrains' classic dark scheme, as shipped in IntelliJ IDEA) with an improved take on VSCode's Default Dark+ UI colors.
