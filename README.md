@@ -1,3 +1,5 @@
+<img src="icon.png" alt="Default Dark+ IntelliJ Theme icon" width="128">
+
 # Default Dark+ IntelliJ Theme (Visual Studio Code)
 
 [![Version](https://vsmarketplacebadges.dev/version-short/niccolomineo.default-dark-plus-intellij.svg?style=flat&label=Version&color=blue)](https://marketplace.visualstudio.com/items?itemName=niccolomineo.default-dark-plus-intellij)

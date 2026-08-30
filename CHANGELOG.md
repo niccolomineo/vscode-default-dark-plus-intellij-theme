@@ -1,3 +1,11 @@
+## v1.5.6
+
+- Redraw the extension icon as an Apple-style squircle — a rounded rectangle with superelliptic corners replaces the circle the old asset inherited from its vector-editor export, which also carried the geometry as opaque transform matrices rather than plain coordinates
+- Relight the icon from above: a vertical gradient and a specular sheen replace the off-centre radial fill, an inner bevel runs from white at the top edge to black at the bottom, and a soft drop shadow lifts the shape off both light and dark backgrounds
+- Recolor the icon's code lines with the theme's own token colors — `#CC7832` keywords, `#639250` strings, `#FFC66D` functions, `#6897BB` numbers, `#9476A5` properties and `#BEBEBE` editor foreground — in place of approximations that matched no scope in the theme
+- Ship `icon.png` at 1024×1024 rather than 512×512, so the Marketplace and the Extensions view have a source large enough for every display density
+- Add the icon to the top of the README, ahead of the title, so it is the first image in the file and gets picked up as the product image instead of the screenshot
+
 ## v1.5.5
 
 - Add `surface.background`, `surface.border` and `surface.foreground`, the tokens VSCode 1.133 uses to paint the framed "card" containers — they override `sideBar.border` with `!important`, so the card edge that the whole v1.5.x chrome is built around was being drawn by their defaults rather than by the theme
