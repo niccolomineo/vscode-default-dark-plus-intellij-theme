@@ -1,45 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="1024" height="1024" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="512" height="512" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>Default Dark+ IntelliJ Theme</title>
     <defs>
-        <path id="sq" d="M472.00 195.00 L472.00 317.00 C472.00 361.49 471.48 408.57 440.02 440.02 C408.57 471.48 361.49 472.00 317.00 472.00 L195.00 472.00 C150.51 472.00 103.43 471.48 71.98 440.02 C40.52 408.57 40.00 361.49 40.00 317.00 L40.00 195.00 C40.00 150.51 40.52 103.43 71.98 71.98 C103.43 40.52 150.51 40.00 195.00 40.00 L317.00 40.00 C361.49 40.00 408.57 40.52 440.02 71.98 C471.48 103.43 472.00 150.51 472.00 195.00 Z"/>
+        <path id="sq" d="M512.00 184.00 L512.00 328.00 C512.00 380.81 511.39 436.70 474.04 474.04 C436.70 511.39 380.81 512.00 328.00 512.00 L184.00 512.00 C131.19 512.00 75.30 511.39 37.96 474.04 C0.61 436.70 0.00 380.81 0.00 328.00 L0.00 184.00 C0.00 131.19 0.61 75.30 37.96 37.96 C75.30 0.61 131.19 0.00 184.00 0.00 L328.00 0.00 C380.81 0.00 436.70 0.61 474.04 37.96 C511.39 75.30 512.00 131.19 512.00 184.00 Z"/>
         <clipPath id="clip">
-            <path d="M472.00 195.00 L472.00 317.00 C472.00 361.49 471.48 408.57 440.02 440.02 C408.57 471.48 361.49 472.00 317.00 472.00 L195.00 472.00 C150.51 472.00 103.43 471.48 71.98 440.02 C40.52 408.57 40.00 361.49 40.00 317.00 L40.00 195.00 C40.00 150.51 40.52 103.43 71.98 71.98 C103.43 40.52 150.51 40.00 195.00 40.00 L317.00 40.00 C361.49 40.00 408.57 40.52 440.02 71.98 C471.48 103.43 472.00 150.51 472.00 195.00 Z"/>
+            <path d="M512.00 184.00 L512.00 328.00 C512.00 380.81 511.39 436.70 474.04 474.04 C436.70 511.39 380.81 512.00 328.00 512.00 L184.00 512.00 C131.19 512.00 75.30 511.39 37.96 474.04 C0.61 436.70 0.00 380.81 0.00 328.00 L0.00 184.00 C0.00 131.19 0.61 75.30 37.96 37.96 C75.30 0.61 131.19 0.00 184.00 0.00 L328.00 0.00 C380.81 0.00 436.70 0.61 474.04 37.96 C511.39 75.30 512.00 131.19 512.00 184.00 Z"/>
         </clipPath>
-        <linearGradient id="body" x1="256" y1="40" x2="256" y2="472" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#545454"/>
-            <stop offset="0.5" stop-color="#363636"/>
-            <stop offset="1" stop-color="#222222"/>
+        <linearGradient id="body" x1="256" y1="0" x2="256" y2="512" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#585858"/>
+            <stop offset="0.5" stop-color="#383838"/>
+            <stop offset="1" stop-color="#282828"/>
         </linearGradient>
-        <radialGradient id="sheen" cx="256" cy="40" r="330" gradientUnits="userSpaceOnUse">
+        <radialGradient id="sheen" cx="256" cy="0" r="390" gradientUnits="userSpaceOnUse">
             <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.15"/>
             <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
         </radialGradient>
-        <linearGradient id="bevel" x1="256" y1="40" x2="256" y2="472" gradientUnits="userSpaceOnUse">
+        <linearGradient id="bevel" x1="256" y1="0" x2="256" y2="512" gradientUnits="userSpaceOnUse">
             <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.30"/>
             <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0"/>
             <stop offset="1" stop-color="#000000" stop-opacity="0.35"/>
         </linearGradient>
-        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-            <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000000" flood-opacity="0.40"/>
-        </filter>
         <filter id="barShadow" x="-20%" y="-20%" width="140%" height="140%">
-            <feDropShadow dx="0" dy="1.5" stdDeviation="1.5" flood-color="#000000" flood-opacity="0.35"/>
+            <feDropShadow dx="0" dy="1.8" stdDeviation="1.8" flood-color="#000000" flood-opacity="0.35"/>
         </filter>
     </defs>
-    <use href="#sq" xlink:href="#sq" fill="url(#body)" filter="url(#shadow)"/>
+    <use href="#sq" xlink:href="#sq" fill="url(#body)"/>
     <use href="#sq" xlink:href="#sq" fill="url(#sheen)"/>
     <use href="#sq" xlink:href="#sq" fill="none" stroke="url(#bevel)" stroke-width="4" clip-path="url(#clip)"/>
     <g filter="url(#barShadow)">
-        <rect x="148.5" y="159.5" width="84" height="15" rx="7.5" fill="#BEBEBE"/>
-        <rect x="148.5" y="204" width="58" height="15" rx="7.5" fill="#BEBEBE"/>
-        <rect x="148.5" y="248.5" width="84" height="15" rx="7.5" fill="#BEBEBE"/>
-        <rect x="148.5" y="293" width="58" height="15" rx="7.5" fill="#BEBEBE"/>
-        <rect x="148.5" y="337.5" width="84" height="15" rx="7.5" fill="#BEBEBE"/>
-        <rect x="262.5" y="159.5" width="101" height="15" rx="7.5" fill="#CC7832"/>
-        <rect x="236" y="204" width="127.5" height="15" rx="7.5" fill="#639250"/>
-        <rect x="263" y="248.5" width="100.5" height="15" rx="7.5" fill="#FFC66D"/>
-        <rect x="237.5" y="293" width="126" height="15" rx="7.5" fill="#6897BB"/>
-        <rect x="262.5" y="337.5" width="101" height="15" rx="7.5" fill="#9476A5"/>
+        <rect x="128" y="141" width="100" height="18" rx="9" fill="#BEBEBE"/>
+        <rect x="128" y="194" width="69" height="18" rx="9" fill="#BEBEBE"/>
+        <rect x="128" y="247" width="100" height="18" rx="9" fill="#BEBEBE"/>
+        <rect x="128" y="300" width="69" height="18" rx="9" fill="#BEBEBE"/>
+        <rect x="128" y="353" width="100" height="18" rx="9" fill="#BEBEBE"/>
+        <rect x="264" y="141" width="120" height="18" rx="9" fill="#CC7832"/>
+        <rect x="233" y="194" width="151" height="18" rx="9" fill="#639250"/>
+        <rect x="265" y="247" width="119" height="18" rx="9" fill="#FFC66D"/>
+        <rect x="235" y="300" width="149" height="18" rx="9" fill="#6897BB"/>
+        <rect x="264" y="353" width="120" height="18" rx="9" fill="#9476A5"/>
     </g>
 </svg>

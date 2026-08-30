@@ -1,3 +1,9 @@
+## v1.5.7
+
+- Make the icon full-bleed: the squircle now touches all four edges of the 512×512 canvas instead of sitting inside a 40 px transparent margin, so the extension no longer renders visibly smaller than its neighbours in the Extensions view and on the Marketplace
+- Drop the outer drop shadow, which is what the margin existed for, and lighten the body ramp to `#585858 → #383838 → #282828` so the lower edge still separates from the dark chrome now that nothing sits behind it
+- Scale the code lines with the tile so they keep occupying half its width, and return `icon.png` to 512×512 — the 1024×1024 export of v1.5.6 tripled the asset for no visible gain
+
 ## v1.5.6
 
 - Redraw the extension icon as an Apple-style squircle — a rounded rectangle with superelliptic corners replaces the circle the old asset inherited from its vector-editor export, which also carried the geometry as opaque transform matrices rather than plain coordinates
