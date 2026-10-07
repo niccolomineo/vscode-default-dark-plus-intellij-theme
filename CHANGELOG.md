@@ -65,34 +65,46 @@
 
 ## v1.3.3
 
-- More bold restoration for #CC7832 tokens
+- Restore bold on more of the Darcula keyword-orange (`#CC7832`) scopes — with this release all 14 of them render bold: `keyword`, `keyword.control`, `constant.language`, `storage.type`, `storage.modifier`, `meta.preprocessor`, `meta.diff.header`, the `new`, `sizeof`, cast and expression operators, Python's logical operators, and PHP's `<?php` / `?>` tags
+
+## v1.3.2
+
+- Add styling fixes
+
+## v1.3.1
+
+- Add styling fixes
 
 ## v1.3.0
 
-- Move some tokens to different color
-- Group token scopes by setting
+- Move some tokens to a different color
+- Reorganize `tokenColors` by setting: each color or font style is declared once, in a single rule listing every scope that uses it, so bold is applied by its own `fontStyle` rule rather than alongside a color
 
 ## v1.2.0
 
-- Rename theme
-- Revamp icon
+- Rename the theme from **Nights Theme** to **Default Dark+ IntelliJ Theme**, and the GitHub repository from `vscode-nights-theme` to `vscode-default-dark-plus-intellij-theme`
+- Revamp the icon into a round tile with a grey radial gradient and rows of colored code strokes
 
 ## v1.1.7
 
-- Style status bar when no folder is open
+- Set `statusBar.noFolderBackground` and `statusBar.noFolderForeground`, so the status bar keeps the theme's colors when no folder is open instead of switching to VSCode's stock purple (`#68217A`)
 
 ## v1.1.6
 
-- Change icon
+- Change the icon
 
 ## v1.1.5
 
-- Add more styling fixes
+- Add styling fixes
 
 ## v1.1.4
 
-- Make sidebar panels style consistent
+- Make the side bar panels' style consistent
+
+## v1.1.3
+
+- Add styling fixes
 
 ## v1.1.2
 
-- Initial release
+- First release

@@ -56,14 +56,14 @@
       <text x="82" y="227" fill="#81B88B">  tests.py</text>
     </g>
 
-    <!-- editor group header: editorGroupHeader.tabsBackground, tab.inactiveBackground -->
-    <rect x="270" y="30" width="821" height="34" fill="#1E1E1E"/>
-    <rect x="410" y="30" width="120" height="34" fill="#252526"/>
-    <!-- tab.border -->
-    <rect x="410" y="30" width="1" height="34" fill="#FFFFFF" fill-opacity="0.102"/>
-    <rect x="530" y="30" width="1" height="34" fill="#FFFFFF" fill-opacity="0.102"/>
-    <text x="290" y="51" fill="#FFFFFF" font-size="12">● models.py</text>
-    <text x="430" y="51" fill="#8A8A8A" font-size="12">views.py</text>
+    <!-- editor group header, Modern UI connected tabs: editorGroupHeader.connectedTabsBackground -->
+    <rect x="270" y="30" width="821" height="34" fill="#242424"/>
+    <!-- active tab: editor.background, joined to the editor by 7px shoulders, outlined with tab.border -->
+    <path d="M273 64 A7 7 0 0 0 280 57 V41 A6 6 0 0 1 286 35 H394 A6 6 0 0 1 400 41 V57 A7 7 0 0 0 407 64 Z" fill="#1E1E1E"/>
+    <path d="M273 63.5 A6.5 6.5 0 0 0 280.5 57 V41 A5.5 5.5 0 0 1 286 35.5 H394 A5.5 5.5 0 0 1 399.5 41 V57 A6.5 6.5 0 0 0 407 63.5" fill="none" stroke="#FFFFFF" stroke-opacity="0.102"/>
+    <text x="294" y="53" fill="#FFFFFF" font-size="12">● models.py</text>
+    <!-- tab.inactiveForeground -->
+    <text x="426" y="53" fill="#8A8A8A" font-size="12">views.py</text>
 
     <!-- editor code area -->
     <rect x="270" y="64" width="821" height="396" fill="#1E1E1E"/>
