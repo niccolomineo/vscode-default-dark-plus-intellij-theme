@@ -33,6 +33,7 @@
         "editorBracketMatch.border": "#888888",
         "editorError.foreground": "#F44747",
         "editorGroup.border": "#FFFFFF1A",
+        "editorGroupHeader.connectedTabsBackground": "#242424",
         "editorGroupHeader.noTabsBackground": "#1E1E1E",
         "editorGroupHeader.tabsBackground": "#1E1E1E",
         "editorGutter.addedBackground": "#587C0C",

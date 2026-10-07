@@ -1,3 +1,7 @@
+## v1.5.8
+
+- Add `editorGroupHeader.connectedTabsBackground` at the card tone (`#242424`) so VSCode 1.141's connected editor tabs actually read as connected: the active tab keeps the editor canvas (`#1E1E1E`) and joins its content, while the strip behind it steps back — previously the strip inherited `editorGroupHeader.tabsBackground` (`#1E1E1E`), so strip, tab and editor were one flat color and only the `#FFFFFF1A` outline marked the active tab. The token only applies to Modern UI's connected tab style, so the classic tab bar is unchanged
+
 ## v1.5.7
 
 - Make the icon full-bleed: the squircle now touches all four edges of the 512×512 canvas instead of sitting inside a 40 px transparent margin, so the extension no longer renders visibly smaller than its neighbours in the Extensions view and on the Marketplace
